@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup-My Hobby</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 60px;
+            font-style: italic;
+        }
+        h2{
+            text-align: center;
+            font-style: oblique;
+            font-size: medium;
+        }
+        .container{
+            text-align: center;
+            max-width: 500px;
+            margin: 15px auto;
+            background-color: ivory;
+            padding: 15px 20px;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        body{
+            background-color: antiquewhite;
+        }
+       
+    .theme-button{
+        text-align: center;
+        margin: 0 auto;
+        background-color: black;
+        color: white;
+
+    }
+  button{
+    display: block;
+    background-color: bisque;
+    font-size: 15px;
+    text-align: center;
+    margin: 0 auto;
+    
+  }
+  footer{
+    text-align: center;
+  }
+.finished-look{
+   width: 280px;
+  height: auto;
+  display: block;
+  margin: 30px auto 40px auto;
+  transition: filter 0.5s ease, transform 0.5s ease;
+  filter: blur(1px) brightness(0.95);
+}
+
+.finished-look:hover {
+  filter: blur(0);
+  transform: scale(1.05);
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3,150px);
+  grid-template-rows: repeat(3,150px);
+  grid-gap: 15px;
+  align-items: center;
+  margin-bottom: 15px;
+
+}
+.grid img {
+  transition: filter 0.5s ease, transform 0.5s ease;
+  filter: blur(1px) brightness(0.95);
+}
+
+.grid img:hover {
+  filter: blur(0);
+  transform: scale(1.05);
+}
+
+
+img{
+  width: 150px;
+  height: 150px;
+  align-items: center;
+}
+p{
+  text-align: justify;
+  margin-top: 10px;
+  line-height: 1.6;
+  word-spacing: 2px;
+  margin-bottom: 0;
+}
+.dark{
+  background: #321B02;
+  color: bisque;
+}
+.dark .container{
+  background:#0F080E;
+}
+.dark a{
+  color: burlywood;
+}
+    </style>
+</head>
+<body>
+    <button class="theme-button">Change theme</button>
+    <div class="container">
+    <h1>Makeup</h1>
+    <h2>Shapeshift?Catfish?Enhancing your natural features??Let's do it💅</h2>
+    <img src="https://i.pinimg.com/736x/b1/fe/c6/b1fec6f9b87829718ed9be849f38c606.jpg" class="finished-look">
+    <div class="grid">
+    <img src="https://i.pinimg.com/736x/78/39/2c/78392cc17e3813a08edce8d46dfddd1b.jpg" class="tutorial-picture">
+    <img src="https://i.pinimg.com/1200x/5b/f9/e7/5bf9e7b6a4325f43b88217e4e8ac181a.jpg" class="finished-tutorial">
+    <img src="https://i.pinimg.com/736x/42/78/53/4278530398183adf7aac72d3bbc7238a.jpg" class="finished-look2">
+    <img src="https://i.pinimg.com/736x/4c/34/97/4c3497b6277c7b06715cabaefed64a8b.jpg" class="tools">
+    <img src="https://i.pinimg.com/736x/51/b9/97/51b99781c4aae3f792f0b93030bad1fe.jpg" class="finished-look3">
+    <img src="https://i.pinimg.com/736x/5e/5c/01/5e5c01cc8ba100ad41783024d9277fdb.jpg" class="products">
+    </div>
+  <p>Makeup is a creative way to enhance natural beauty, experiment with different looks, and express individuality. From subtle touch-ups to dramatic “shape-shifting” techniques, it can highlight features, boost confidence, and help cover insecurities. For some, it’s also about transformation — using artistry and clever methods to reinvent how they present themselves while still celebrating personal style.</p>
+  <a href="https://glowmag.co.za/the-evolution-of-makeup-a-historical-journey-through-beauty-trends/?utm_source=chatgpt.com">Read more about makeup</a>
+    </div>
+  <button>Find your preferred look!</button>
+  <hr>
+  <footer>Coded by 
+    <a href="https://www.shecodes.io/graduates/136030-balekane-nonyane" target="_blank" >Ballie❤️</a></footer> 
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        body.classList.toggle("dark");
+      }
+      let themeButton=document.querySelector(".theme-button");
+      themeButton.addEventListener("click",changeTheme);
+    </script>
+</body>
+</html>
